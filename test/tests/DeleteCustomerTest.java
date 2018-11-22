@@ -74,7 +74,6 @@ public class DeleteCustomerTest {
         alerta.accept();
         String ConfirmacionDelete = driver.switchTo().alert().getText() ;
         Assert.assertTrue(ConfirmacionDelete.contains("Customer deleted Successfully"));
-        //Alert alertaConfirmacion = driver.switchTo().alert();
         alerta.accept();
     }
 }

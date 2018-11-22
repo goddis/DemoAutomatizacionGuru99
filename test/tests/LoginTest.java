@@ -41,15 +41,23 @@ public class LoginTest {
 
     @Test
     public void test_Home_Page_Appear_Correct() {
+<<<<<<< HEAD
         //Create Login object
+=======
+
+>>>>>>> 93f07dbbeece363441029492bd2893639e8d2e2c
         objLogin = new Login(driver);
-        //Verify login page title
         String loginPageTitle = objLogin.getLoginTitle();
         Assert.assertTrue(loginPageTitle.toLowerCase().contains("guru99 bank"));
-        //login to application
         objLogin.login("mngr160882", "baragAp");
+<<<<<<< HEAD
         // go the next page
    
+=======
+        objHomePage = new HomePage(driver);
+        Assert.assertTrue(objHomePage.getHomePageDashboardUserName().toLowerCase().contains("manger id : mngr160882"));
+
+>>>>>>> 93f07dbbeece363441029492bd2893639e8d2e2c
     }
 
 }
