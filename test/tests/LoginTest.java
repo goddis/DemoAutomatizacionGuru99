@@ -41,7 +41,7 @@ public class LoginTest {
 
     @Test
     public void test_Home_Page_Appear_Correct() {
-        //Create Login Page object
+        //Create Login object
         objLogin = new Login(driver);
         //Verify login page title
         String loginPageTitle = objLogin.getLoginTitle();
@@ -49,10 +49,7 @@ public class LoginTest {
         //login to application
         objLogin.login("mngr160882", "baragAp");
         // go the next page
-        objHomePage = new HomePage(driver);
-        //Verify home page
-        Assert.assertTrue(objHomePage.getHomePageDashboardUserName().toLowerCase().contains("manger id : mngr160882"));
-
+   
     }
 
 }

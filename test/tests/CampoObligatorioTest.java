@@ -21,7 +21,7 @@ public class CampoObligatorioTest {
     //objetos
     static WebDriver driver;
     
-    //inicialización de los objetos
+    //inicialización de los objetos de campos obligatorios
     Login objLogin = new Login(driver);
     HomePage objHomePage = new HomePage(driver); 
     CampoObligatorio objCampoObligatorio = new CampoObligatorio(driver); 
